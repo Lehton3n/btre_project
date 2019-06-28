@@ -34,5 +34,8 @@ def about(request):
   return render(request, "pages/about.html", context)
 
   def listings(request):
-    return render(request, "listings/listings.html")
+    context = {
+      "listings":listings
+    }
+    return render(request, "listings/listings.html", context)
 
