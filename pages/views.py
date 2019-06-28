@@ -33,3 +33,10 @@ def about(request):
 
   return render(request, "pages/about.html", context)
 
+  def listings(request):
+    context = {
+      "listings":listings
+    }
+    
+    return render(request, "listings/listings.html")
+
